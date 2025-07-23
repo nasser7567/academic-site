@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    AOS.init();
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات تعليمية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #004080, #0066cc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-right: 20px;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .contact {
+      background-color: #e6f2ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .banner {
+      background-color: #e0efff;
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #003366;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <script>
+    // زر العودة إلى الأعلى
+    window.addEventListener('scroll', function() {
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+  <script>
+    // نافذة منبثقة لاستشارة مجانية
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const popup = document.createElement('div');
+        popup.innerHTML = `
+        <div style="position: fixed; bottom: 20px; right: 20px; background: white; border: 2px solid #004080; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); max-width: 300px; z-index: 9999;">
+          <strong>استشارة مجانية؟</strong>
+          <p>احجز الآن أول استشارة مجانية لمساعدتك في بحثك العلمي!</p>
+          <a href='https://wa.me/dronlineservicew015' class='button' style='background:#25D366;'>تواصل الآن</a>
+        </div>`;
+        document.body.appendChild(popup);
+      }, 15000);
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="/mnt/data/Colorful Illustrative Modern Education Learning Logo  (1).png" alt="شعار خدمات بحثية">
+    <h1>خدمات تعليمية</h1>
+    <p>دعم أكاديمي متكامل لطلاب الدراسات العليا</p>
+    <div style="background-color: #ffcc00; color: #333; padding: 10px 20px; margin-top: 20px; border-radius: 10px; display: inline-block; font-weight: bold;">
+      🎓 خصم 50% على إعداد رسائل الماجستير والدكتوراه لفترة محدودة!
+    </div>
+  </header>
+  <nav id="mainNav" style="position: sticky; top: 0; z-index: 999;">
+    <a href="#about">من نحن</a>
+    <a href="#services">الخدمات</a>
+    <a href="#gallery">معرض الصور</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+  <section id="blog" data-aos="fade-up">
+    <h2>مقالات أكاديمية</h2>
+    <div style="display: flex; flex-direction: column; gap: 20px; max-width: 900px; margin: auto;">
+      <article style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.05);">
+        <h3>كيف تبدأ رسالة الماجستير؟</h3>
+        <p>في هذا المقال نشرح خطوات اختيار الموضوع، كتابة خطة البحث، وأهم النصائح لضمان قبول الرسالة.</p>
+        <a href="#" class="button">اقرأ المزيد</a>
+      </article>
+      <article style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.05);">
+        <h3>أهمية التحليل الإحصائي في الدراسات الأكاديمية</h3>
+        <p>تعرف على أدوات SPSS وأهميته في تحليل البيانات بدقة واحترافية في الرسائل العلمية.</p>
+        <a href="#" class="button">اقرأ المزيد</a>
+      </article>
+    </div>
+  </section>
+  <section id="request" data-aos="fade-up">
+    <h2>طلب خدمة</h2>
+    <form style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <label>الاسم الكامل:</label><br>
+      <input type="text" name="name" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"><br>
+      <label>البريد الإلكتروني:</label><br>
+      <input type="email" name="email" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"><br>
+      <label>التخصص:</label><br>
+      <input type="text" name="field" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"><br>
+      <label>نوع الخدمة المطلوبة:</label><br>
+      <textarea name="service" rows="4" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;"></textarea><br>
+      <button type="submit" class="button" style="width: 100%;">إرسال الطلب</button>
+    </form>
+  </section>
+  <section id="about" data-aos="fade-up">
+    <h2>من نحن</h2>
+    <p>
+      نقدم خدمات متكاملة في إعداد الأبحاث العلمية بجودة عالية وسرية تامة، تشمل رسائل الماجستير والدكتوراه، بحوث الترقية، مشاريع التخرج، تصميم الاستبيانات وتحليلها، المراجعة اللغوية والإملائية، إعداد أوراق علمية، والترجمة الأكاديمية المعتمدة.
+    </p>
+    <p>
+      تشمل التخصصات: القانون (دستوري، إداري، جنائي، مدني، دولي عام وخاص)، العلوم السياسية، اللغة العربية (نحو، صرف، بلاغة، أدب، شعر، لسانيات)، التربية، التجارة (محاسبة، إدارة أعمال، اقتصاد)، العلوم الشرعية (فقه، تفسير، حديث، عقيدة، دعوة)، ونظم المعلومات الإدارية.
+    </p>
+    <p>
+      كما نساعد طلاب الدراسات العليا منذ اعتماد خطة البحث وحتى كتابة النتائج والتوصيات، مع توفير دعم في التحليل الإحصائي باستخدام برنامج SPSS، وعمل الواجبات للجامعات الخاصة وفق المعايير الدولية.
+    </p>
+    <p>
+      يضم فريقنا محكمين متخصصين لمراجعة الدراسات، ونوفر عروض PowerPoint، ورسائل علمية كاملة في كافة التخصصات. لدينا خبرة طويلة في التعامل مع الباحثين في مختلف الدول العربية والأجنبية.
+    </p>
+    <a href="#contact" class="button">احجز خدمتك الآن</a>
+  </section>
+  <section id="services" data-aos="fade-up">
+    <h2>خدماتنا</h2>
+    <ul>
+      <li>مساعدة في إعداد رسائل الماجستير</li>
+      <li>مساعدة في إعداد رسائل الدكتوراه</li>
+      <li>مشاريع التخرج الجامعية</li>
+      <li>إعداد أبحاث النشر العلمي</li>
+      <li>أبحاث الترقية للأساتذة الجامعيين</li>
+      <li>مراجعة لغوية وأكاديمية</li>
+    </ul>
+  </section>
+  <section id="gallery" data-aos="fade-up">
+    <h2>معرض الصور</h2>
+    <div class="gallery">
+      <img src="/mnt/data/Colorful Illustrative Modern Education Learning Logo  (1).png" alt="شعار خدمات بحثية">
+      <img src="/mnt/data/تواصل معنا.png" alt="خصم وخدمات العملاء">
+      <img src="/mnt/data/523818967_1110872067836964_6550240279589181114_n.jpg" alt="خدمات إعداد الرسائل">
+    </div>
+  </section>
+  <section id="testimonials" data-aos="fade-up">
+    <h2>آراء العملاء</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); width: 300px;">
+        <p>"خدمة ممتازة وتعامل راقٍ. أنجزوا بحثي في وقت قياسي!"</p>
+        <strong>– د. أحمد، مصر</strong>
+      </div>
+      <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); width: 300px;">
+        <p>"فريق رائع ساعدني من بداية خطة الرسالة حتى المناقشة."</p>
+        <strong>– ريم، السعودية</strong>
+      </div>
+    </div>
+  </section>
+  <section id="faq" data-aos="fade-up">
+    <h2>الأسئلة الشائعة</h2>
+    <div style="max-width: 800px; margin: auto;">
+      <h4>ما المدة المطلوبة لإنجاز رسالة ماجستير؟</h4>
+      <p>تختلف حسب التخصص، لكنها عادة ما تستغرق من 3 إلى 6 أشهر.</p>
+      <h4>هل يمكنكم المساعدة فقط في جزء من الرسالة؟</h4>
+      <p>نعم، يمكننا مساعدتك في أي جزء تختاره من الرسالة أو البحث.</p>
+      <h4>هل تضمنون السرية؟</h4>
+      <p>بالطبع، نلتزم بالخصوصية والسرية التامة في كل مراحل العمل.</p>
+    </div>
+  </section>
+  <section id="contact" data-aos="fade-up">
+    <h2>تواصل معنا</h2>
+    <div class="contact">
+      <p>📞 واتساب: <a href="https://wa.me/dronlineservicew015">dronlineservicew015</a></p>
+      <p>📧 بريد إلكتروني: <a href="mailto:onlineservices0152@gmail.com">onlineservices0152@gmail.com</a></p>
+      <p>📍 العنوان: القاهرة، مصر</p>
+      <p>🕒 متاحون يوميًا من 10 صباحًا إلى 10 مساءً</p>
+    </div>
+    <div style="margin-top: 30px;">
+      <iframe src="https://www.google.com/maps?q=Cairo,+Egypt&output=embed" width="100%" height="300" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" allowfullscreen></iframe>
+    </div>
+    <div style="position: fixed; bottom: 100px; left: 30px; z-index: 1000;">
+      <a href="https://wa.me/dronlineservicew015" target="_blank" style="background-color: #25D366; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">💬 تواصل واتساب</a>
+    </div>
+    <section id="custom" data-aos="fade-up">
+      <h2>مساحتك الخاصة</h2>
+      <div class="banner">
+        <p>يمكنك تخصيص هذا القسم لاحقًا لإضافة مقالات، عروض، نماذج أعمال، أو خدمات جديدة حسب الحاجة.</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 خدمات تعليمية. جميع الحقوق محفوظة لـ <strong>DR. Nasser Mohamed ELsayed</strong>.</p>
+      <p>هذا الموقع مُصمم حصريًا من قبل المالك، ولا يُسمح بأي تعديل أو نسخ دون إذن مسبق من الدكتور ناصر محمد السيد.</p>
+      <div style="padding: 20px; text-align: center; font-size: 14px;">
+        <a href="#" style="margin: 0 10px; color: white;">سياسة الخصوصية</a> |
+        <a href="#" style="margin: 0 10px; color: white;">اتفاقية الاستخدام</a>
+      </div>
+    </footer>
+
+    <!-- صفحة سياسة الخصوصية -->
+    <section id="privacy-policy" data-aos="fade-up" style="padding: 50px 20px; background: #f5f5f5;">
+      <h2>سياسة الخصوصية</h2>
+      <p>نحن نحترم خصوصيتك. جميع المعلومات التي تقدمها عبر هذا الموقع تُستخدم فقط لتقديم الخدمات التعليمية، ولا يتم مشاركتها مع أي طرف ثالث. نلتزم بالحفاظ على سرية بيانات العملاء وعدم تخزين أو استخدام أي معلومات شخصية دون موافقة واضحة.</p>
+    </section>
+
+    <!-- صفحة اتفاقية الاستخدام -->
+    <section id="terms-of-use" data-aos="fade-up" style="padding: 50px 20px;">
+      <h2>اتفاقية الاستخدام</h2>
+      <p>باستخدامك لهذا الموقع، فإنك توافق على شروط الخدمة المقدمة. يُمنع استخدام أي جزء من المحتوى أو التصميم دون إذن كتابي من مالك الموقع <strong>DR. Nasser Mohamed ELsayed</strong>. يحق لنا تعديل أو تحديث الشروط دون إشعار مسبق.</p>
+    </section>
+    <button onclick="scrollToTop()" id="scrollTopBtn" style="position: fixed; bottom: 30px; left: 30px; display: none; background: #004080; color: white; border: none; padding: 10px 15px; border-radius: 8px; cursor: pointer; font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">⬆ إلى الأعلى</button>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
